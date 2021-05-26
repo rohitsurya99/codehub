@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 const contactFormSchema = new mongoose.Schema({                                     // Contact Form Schema
     name: String,
     email: String,
+    subject: String,
     message: String
 });
 const contactFormModel = new mongoose.model("Contact Form", contactFormSchema);     // Contact Form Model
